@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div id="home" class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5 bg-portada-izquierda">
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'core/img/padre.png' %}">
+            <img src="{% static 'core/img/padre.png' %}" alt="Recien nacido">
+        </div>
+        <div class="col-5 bg-portada-derecha">
+            <form method="get">
+                {% csrf_token %}
+                <p class="titulo">Rut-pasaporte-Email</p>
+                <input class="form-control" type="text" placeholder="rut-pasaporte-email" name="usuario">
+                <p class="titulo">Contraseña</p> 
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Contraseña" name="contraseña"> <br>
+                <button type="submit" class="btn btn-acceder btn-primary">Acceder</button> <br> <br>
+            </form>        
+
+            <a class="btn btn-volver btn-danger" href="{% url 'home' %}" role="button">volver</a>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+{% endblock %}

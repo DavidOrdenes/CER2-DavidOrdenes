@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilos1.css' %}">
+    <title>Neonatología</title>
+</head>
+<body>
+    <div id="navinicio" class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <img src={% static 'core/img/logo-pequeño.png' %}>
+            </div>
+            <div class="col-1 bg-header">
+                <p class="letra">Hospital Dr. <br>
+                    Gustavo Fricke <br> Área pediatrica  <br> y neonatología</p>
+            </div>
+            <div class="col-7 bg-usuario">
+                {% for matronas in matronas %}
+                    {{matronas.nombre}} {{matronas.primerapellido}} {{matronas.segundoapellido}} | {{matronas.cargo}}
+                {% endfor %}
+            </div>
+            <div class="col-2"></div>
+        </div>
+   
+
+    
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Opciones
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Seguimientos</a></li>
+                      <li><a class="dropdown-item" href="#">Visualizar usuarios regitrados</a></li>
+                      <li><a class="dropdown-item" href="#">Historial de altas</a></li>
+                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    
+    
+
+    {% block content %}
+
+    {% endblock %}
+    </div>
+
+    <link rel="stylesheet" href={% static 'core/js/bootstrap.js' %}>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

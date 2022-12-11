@@ -1,0 +1,105 @@
+.bg-banner {
+    text-align: right;
+    padding-right: 0;
+}
+
+.bg-usuario {
+    font-family: "Roboto";
+    font-size: 50px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.bg-cafe {
+    background-color: #ebe1c9;
+}
+
+#home {
+    height: calc(100vh - 262px);
+}
+
+.bg-header {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.letra {
+    padding-top: 9px;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.titulo {
+    font-family: "Roboto";
+    font-size: 22px;
+}
+
+.bg-portada-izquierda {
+    text-align: center;
+}
+
+.bg-portada-izquierda img {
+    padding-top: 40px;
+}
+
+.bg-portada-derecha {
+    text-align: center;
+}
+
+.bg-portada-derecha {
+    padding-top: 80px;
+}
+
+.bg-boton {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-iniciar-sesion {
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #0f69b4;
+    width: 300px;
+}
+
+.btn-acceder {
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #0f69b4;
+    width: 130px;
+}
+
+.btn-volver {
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #e22c2c;
+    width: 130px;
+}
+
+.btn-seguimiento {
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #0f69b4;
+    width: 130px;
+}
+
+.btn-alta{
+    color: white;
+    font-size: 22px;
+    font-family: "Roboto";
+    background-color: #ff8000;
+    width: 130px;
+}
+
+.footer {
+    height: 121px;
+}
+
+.texto {
+    font-size: 16px;
+    font-family: "Roboto";
+}

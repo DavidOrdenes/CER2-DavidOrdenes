@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilos1.css' %}">
+    <title>Neonatología</title>
+</head>
+<body>
+    <div id="navinicio" class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <img src={% static 'core/img/logo-pequeño.png' %}>
+            </div>
+            <div class="col-1 bg-header">
+                <p class="letra">Hospital Dr. <br>
+                    Gustavo Fricke <br> Área pediatrica  <br> y neonatología</p>
+            </div>
+            <div class="col-8 bg-banner">
+                <img src={% static 'core/img/banner.png' %}>
+            </div>
+            <div class="col-1"></div>
+        </div>
+      </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <hr>
+                    <p class="texto">Servicio de contacto:</p>
+                    <p class="texto">Nro fijo:(32)257 7603 <br>Av. Alvarez 1532, Viña del Mar, Valparaiso</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

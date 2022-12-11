@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div id="home" class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5 bg-portada-izquierda">
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'core/img/portada.jpg' %}">
+            <img src="{% static 'core/img/portada.jpg' %}" alt="Recien nacido">
+        </div>
+        <div class="col-5 bg-portada-derecha">
+            <p class="titulo">En este sitio web se pueden ver los <br>  avances de salud de su recién nacido. <br> <br> Para consultar estados de salud, ingrese aquí.</p>
+
+            <a class="btn btn-iniciar-sesion btn-primary" href="{% url 'sesionpadre' %}" role="button">Iniciar sesión como Padre</a> <br> <br>
+            <a class="btn btn-iniciar-sesion btn-primary" href="{% url 'sesionmatrona' %}" role="button">Iniciar sesión como Matrona</a>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+
+{% endblock %}
